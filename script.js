@@ -1,0 +1,1 @@
+document.querySelector('#cp-year').innerText = new Date().getFullYear();

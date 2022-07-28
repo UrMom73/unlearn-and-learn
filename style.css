@@ -1,0 +1,174 @@
+:root {
+  --comrade-clr: #b92116;
+  --link-hover-clr:#d82a1e;
+  --nav-bg-clr: rgba(29, 26, 26, 0.95);
+  --nav-hover-bg-clr:rgba(8, 8, 8, 0.95);
+  --p-ff: 'Lora', 'Georgia', serif;
+  --h1-ff: 'Vollkorn', 'Merriweather', serif;
+  --nav-a-ff: 'Vollkorn', serif;
+  --link-ff: 'Lora', 'Merriweather', serif;
+  --header-ff: 'Staatliches', 'Oswald', sans-serif;
+}
+
+p#filler {
+  margin-bottom: 0;
+}
+
+.skip-nav-link {
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  left: 0.5rem;
+  position: absolute;
+  transform: translateY(-120%);
+  transition: transform 0.5s;
+  font-family: var(--p-ff);
+}
+
+.skip-nav-link:focus {
+  transform: translateY(130%);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem;
+  background-color: var(--comrade-clr);
+  color: black;
+  font: sans-serif;
+  font-size: 11rem;
+  font-family: var(--header-ff);
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid black 7px;
+}
+
+main {
+  margin: 2% 5%;
+  line-height: 2;
+}
+
+#mainImage{
+  border: none;
+  width: 100%;
+  border-bottom: solid black 7px;
+}
+
+h1 {
+  font-family: var(--h1-ff);
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+a {
+  font-family: var(--link-ff);
+  color: var(--comrade-clr);
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+a:hover {
+  color: var(--link-hover-clr);
+}
+
+img {
+  border: solid black 3px;
+  border-radius: 3px;
+  float: left;
+  margin-right: 5%;
+  width: 25%;
+}
+
+div p {
+  font-family: var(--p-ff);
+  text-align: left;
+  font-size: 4rem;
+}
+
+hr {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: solid black 1px;
+  border-radius: 1px;
+  width: 30%;
+}
+
+div {
+  display: inline-block;
+}
+
+/* nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--nav-bg-clr);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 4rem;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  font-family: var(--nav-a-ff);
+}
+
+li a:hover {
+  background-color: var(--nav-hover-bg-clr);
+  color: white;
+}
+
+@media(max-width: 1075px) {
+  li a {
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width: 945px) {
+  li a {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  border-top: solid black 7px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  background-color: var(--comrade-clr);
+}
+
+footer p {
+  margin: 10rem;
+  text-align: center;
+  font-size: 5rem;
+  font-family: var(--header-ff);
+}
+
+p a {
+  font-size: 4rem;
+}
