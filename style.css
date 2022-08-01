@@ -8,17 +8,20 @@
   --nav-a-ff: 'Vollkorn', serif;
   --link-ff: 'Lora', 'Merriweather', serif;
   --header-ff: 'Staatliches', 'Oswald', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-p#filler {
-  margin-bottom: 0;
+time {
+  font-size: 1.5rem;
+  font-family: var(--p-ff);
 }
 
 .skip-nav-link {
   background-color: black;
-  padding: 0.5rem 1.5rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 0 0 0.25rem 0.25rem;
-  left: 0.5rem;
+  left: 0.25rem;
   position: absolute;
   transform: translateY(-120%);
   transition: transform 0.5s;
@@ -26,12 +29,7 @@ p#filler {
 }
 
 .skip-nav-link:focus {
-  transform: translateY(130%);
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 5px;
+  transform: translateY(150%);
 }
 
 body {
@@ -42,11 +40,11 @@ body {
 }
 
 header {
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--comrade-clr);
   color: black;
   font: sans-serif;
-  font-size: 11rem;
+  font-size: 5.5rem;
   font-family: var(--header-ff);
   text-align: center;
   top: 0;
@@ -68,7 +66,7 @@ main {
 
 h1 {
   font-family: var(--h1-ff);
-  font-size: 8rem;
+  font-size: 4rem;
   text-align: center;
   margin-top: 0;
 }
@@ -77,7 +75,7 @@ a {
   font-family: var(--link-ff);
   color: var(--comrade-clr);
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 a:hover {
@@ -95,7 +93,7 @@ img {
 div p {
   font-family: var(--p-ff);
   text-align: left;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 hr {
@@ -128,7 +126,7 @@ li {
 }
 
 li a {
-  font-size: 4rem;
+  font-size: 2rem;
   color: white;
   display: block;
   text-align: center;
@@ -144,13 +142,17 @@ li a:hover {
 
 @media(max-width: 1075px) {
   li a {
-    font-size: 3.5rem;
+    font-size: 1.75rem;
   }
 }
 
 @media(max-width: 945px) {
   li a {
-    font-size: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .skip-nav-link:focus {
+    transform: translateY(175%);
   }
 }
 
@@ -163,12 +165,12 @@ footer {
 }
 
 footer p {
-  margin: 10rem;
+  margin: 5rem;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-family: var(--header-ff);
 }
 
 p a {
-  font-size: 4rem;
+  font-size: 2rem;
 }
